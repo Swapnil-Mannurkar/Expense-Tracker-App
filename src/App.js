@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Expenses from "./components/expensesTable/Expenses";
 import NewExpense from "./components/addNewExpense/NewExpense";
 
@@ -34,7 +33,7 @@ function App() {
   const addNewExpenseData = (recievedNewExpenseData) => {
     console.log("In App.js");
     console.log(recievedNewExpenseData);
-    addNewExpense([...expenses, recievedNewExpenseData]);
+    addNewExpense([recievedNewExpenseData, ...expenses]);
   };
 
   return (
