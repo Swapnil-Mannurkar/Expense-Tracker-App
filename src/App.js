@@ -31,9 +31,9 @@ function App() {
   ]);
 
   const addNewExpenseData = (recievedNewExpenseData) => {
-    console.log("In App.js");
-    console.log(recievedNewExpenseData);
-    addNewExpense([recievedNewExpenseData, ...expenses]);
+    addNewExpense((expenses) => {
+      return [recievedNewExpenseData, ...expenses];
+    });
   };
 
   return (
