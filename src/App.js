@@ -1,7 +1,10 @@
-import Expenses from "./components/ExpensesTable/Expenses"
+import React, { useState } from "react";
+
+import Expenses from "./components/ExpensesTable/Expenses";
+import NewExpense from "./components/AddNewExpense/NewExpense";
 
 function App() {
-  const expenses = [
+  const [expenses, addNewExpense] = useState([
     {
       id: "e1",
       title: "Toilet Paper",
@@ -26,11 +29,18 @@ function App() {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
-  ];
+  ]);
+
+  const addNewExpenseData = (recievedNewExpenseData) => {
+    console.log("In App.js");
+    console.log(recievedNewExpenseData);
+    addNewExpense([...expenses, recievedNewExpenseData]);
+  };
 
   return (
     <div>
-      <Expenses expenses = {expenses}/>
+      <NewExpense onAddNewExpenseData={addNewExpenseData} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
