@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Swapnil-Mannurkar/Expense-Tracker-App/static/css/main.7e65099b.css",
+    "main.js": "/Swapnil-Mannurkar/Expense-Tracker-App/static/js/main.1b8a9acf.js",
+    "index.html": "/Swapnil-Mannurkar/Expense-Tracker-App/index.html",
+    "main.7e65099b.css.map": "/Swapnil-Mannurkar/Expense-Tracker-App/static/css/main.7e65099b.css.map",
+    "main.1b8a9acf.js.map": "/Swapnil-Mannurkar/Expense-Tracker-App/static/js/main.1b8a9acf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e65099b.css",
+    "static/js/main.1b8a9acf.js"
+  ]
+}
